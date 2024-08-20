@@ -1,5 +1,8 @@
-
-question: Hello, world!
-buttons:
-  - Exit: exit
-mandatory: True
+name:hello-world
+on:push
+jobs:
+    my-job:
+        runs-on:ubuntu-latest
+        steps:
+            -name-my-step
+            run: echo "Hello-world"
